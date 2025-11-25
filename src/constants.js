@@ -98,7 +98,7 @@ export const projects = [
     id: 0,
     title: "Landing page \"Positivus\"",
     description:
-      "Веб-сайт проекта Positivus с современным дизайном и адаптивной версткой",
+      "Веб-сайт проекта Positivus с современным дизайном и адаптивной версткой. Я сверстал все блоки по макету, реализовал адаптивность для разных устройств, применял методологию БЭМ для удобства поддержки кода.",
     image: positivusLogo,
     tags: ["HTML", "CSS/SCSS", "JavaScript", "БЭМ", "Адаптивная верстка"],
     github: "https://github.com/vlad-ryad/positivus-frontend",
@@ -108,7 +108,7 @@ export const projects = [
     id: 1,
     title: "Приложение для учета приема лекарств",
     description:
-      "Это приложение на React Native позволяет пользователям создавать, редактировать и удалять напоминания о приеме лекарств и добавок.",
+      "Приложение на React Native для создания, редактирования и удаления напоминаний о приеме лекарств и добавок. Реализовал хранение данных в Firestore и локально через AsyncStorage, добавил уведомления и пользовательский интерфейс для удобного управления приемом лекарств.",
     image: medLogo,
     tags: ["React Native", "Expo", "Firestore", "AsyncStorage", "JavaScript", "TypeScript"],
     github: "https://github.com/vlad-ryad/Medical-Reminder-App",
@@ -116,9 +116,9 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Movie  App",
+    title: "Movie App",
     description:
-      "Movie App — это интерактивное веб-приложение, которое позволяет пользователям просматривать популярные фильмы, фильтровать их по различным критериям, включая жанры, дату выхода, популярность, рейтинг и название, а также видеть подробную информацию о каждом фильме и переключаться между светлой и тёмной темой (для просмотра включите VPN). ",
+      "Интерактивное веб-приложение для просмотра популярных фильмов. Реализовал фильтры по жанрам, дате выхода, рейтингу и названию, добавил темную/светлую тему, подключил внешний API для получения данных о фильмах.",
     image: movierecLogo,
     tags: ["React", "API", "HTML", "CSS", "JavaScript" , "Vite"],
     github: "https://github.com/vlad-ryad/movie",
@@ -126,9 +126,9 @@ export const projects = [
   },
   {
     id: 3,
-    title: " Landing page \"OmniVision\"",
+    title: "Landing page \"OmniVision\"",
     description:
-      "Это современный одностраничный сайт, полностью адаптированный под все устройства. Проект демонстрирует ключевые преимущества платформы OmniVision с фокусом на пользовательский опыт и визуальную привлекательность.",
+      "Современный одностраничный сайт с фокусом на UX/UI. Реализовал адаптивную верстку для разных устройств, также интерактивные элементы с помощью React и Tailwind CSS.",
     image: omnivisionLogo,
     tags: ["React", "Tailwind CSS", "Vite"],
     github: "https://github.com/vlad-ryad/OmniVision/tree/main",
@@ -138,7 +138,7 @@ export const projects = [
     id: 4,
     title: "Product Store (MERN)",
     description:
-      "Product Store — это полнофункциональное веб-приложение на стеке MERN (MongoDB, Express, React, Node.js), предназначенное для управления товарами: добавления, редактирования, удаление и отображения с удобным интерфейсом.",
+      "Веб-приложение на стеке MERN для управления товарами. Реализовал добавление, редактирование и удаление товаров, интеграцию с REST API, работу с MongoDB и Node.js, настроил фронтенд на React с использованием Chakra UI.",
     image: ProductStoreLogo,
     tags: ["Vite", "React", "REST API", "Node", "Express", "MongoDB", "Chakra UI"],
     github: "https://github.com/vlad-ryad/product_store_mern",
@@ -148,7 +148,7 @@ export const projects = [
     id: 5,
     title: "TaskTrek - Приложение для управления задачами",
     description:
-      "Простое приложение для управления задачами с функцией drag-and-drop на React",
+      "Простое приложение для управления задачами с функцией drag-and-drop. Разработал интерфейс для добавления и удаления задач, реализовал сохранение данных в Local Storage.",
     image: taskLogo,
     tags: ["HTML", "CSS", "React", "Vite", "Local Storage"],
     github: "https://github.com/vlad-ryad/task-project",
