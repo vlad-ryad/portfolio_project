@@ -1,6 +1,7 @@
 import React from "react";
 import {
   FaTelegram,
+  FaLinkedin,
   FaGithub,
 } from "react-icons/fa";
 
@@ -14,7 +15,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="text-white py-8 px-[12vw] md:px-[7vw] lg:px-[20vw]">
+    <footer className="text-white py-5 px-[12vw] md:px-[7vw] lg:px-[20vw]">
       <div className="container mx-auto text-center">
         {/* Name / Logo */}
         <h2 className="text-xl font-semibold text-purple-500">Владислав Рядинский</h2>
@@ -48,6 +49,10 @@ const Footer = () => {
             {
               icon: <FaGithub />,
               link: "https://github.com/vlad-ryad"
+            },
+            {
+              icon: <FaLinkedin />,
+              link: "https://www.linkedin.com/in/vladislav-ryadinsky/"
             },
 
 

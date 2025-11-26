@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import {FiMenu, FiX} from "react-icons/fi";
-import {FaGithub, FaTelegram} from "react-icons/fa";
+import {FaGithub, FaTelegram, FaLinkedin,} from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -77,12 +77,12 @@ const Navbar = () => {
             <FaGithub size={24} />
           </a>
           <a
-            href="https://t.me/vlad_ryad"
+            href="https://www.linkedin.com/in/vladislav-ryadinsky/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
           >
-            <FaTelegram  size={24}/>
+            <FaLinkedin  size={24}/>
           </a>
         </div>
 
@@ -128,12 +128,12 @@ const Navbar = () => {
                 <FaGithub size={24} />
               </a>
               <a
-                href="https://t.me/vlad_ryad"
+                href="https://www.linkedin.com/in/vladislav-ryadinsky/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white"
               >
-                <FaTelegram  size={24}/>
+                <FaLinkedin  size={24}/>
               </a>
             </div>
           </ul>
