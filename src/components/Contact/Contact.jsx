@@ -1,112 +1,47 @@
-import React, {useRef, useState} from "react";
-import emailjs from "@emailjs/browser";
-import {ToastContainer, toast} from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import React from "react";
+import { FaTelegram } from "react-icons/fa";
 
 const Contact = () => {
-  const form = useRef();
-  const [isSent, setIsSent] = useState(false);
+  const telegramUsername = "vlad_ryad"; // Замените на ваш username Telegram
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  return (
+    <section
+      id="contact"
+      className="flex flex-col items-center justify-center py-24 px-[12vw] md:px-[7vw] lg:px-[20vw]"
+    >
+      {/* Заголовок секции */}
+      <div className="text-center mb-16">
+        <h2 className="text-4xl font-bold text-white">Связаться со мной</h2>
+        <div className="w-32 h-1 bg-gradient-to-r from-purple-500 to-purple-700 mx-auto mt-4"></div>
+        <p className="text-gray-400 mt-4 text-lg font-semibold">
+          Готов ответить на ваши вопросы. Напишите мне в Telegram, и я свяжусь с вами в ближайшее время.
+        </p>
+      </div>
 
-    emailjs
-      .sendForm("service_7d77rx4",  //  EmailJS Service ID
-        "template_25dxhsa",  //  EmailJS Template ID
-        form.current, "bGqgZGx8StvObPdgC"  //  EmailJS Public Key
-      )
-      .then(() => {
-        setIsSent(true);
-        form.current.reset(); // Очистка полей формы после отправки
-        toast.success("Сообщение успешно отправлено! ✅", {
-          position: "top-right",
-          autoClose: 3000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          theme: "dark",
-        });
-      }, (error) => {
-        console.error("Ошибка при отправке сообщения:", error);
-        toast.error("Не удалось отправить сообщение. Пожалуйста, попробуйте еще раз.", {
-          position: "top-right",
-          autoClose: 3000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          theme: "dark",
-        });
-      });
-  };
+      {/* Блок связи через Telegram */}
+      <div className="mt-6 w-full max-w-md bg-[#0d081f] p-5 rounded-lg shadow-lg border border-gray-700">
 
-  return (<section
-    id="contact"
-    className="flex flex-col items-center justify-center py-24 px-[12vw] md:px-[7vw] lg:px-[20vw]"
-  >
-    {/* Контейнер уведомлений */}
-    <ToastContainer />
+        <div className="mt-6 flex flex-col items-center space-y-6">
+          {/* Иконка Telegram */}
+          <div className="w-20 h-20 bg-gradient-to-r from-purple-500 to-purple-700 rounded-full flex items-center justify-center">
+            <FaTelegram className="w-10 h-10 text-white" />
+          </div>
 
-    {/* Заголовок секции */}
-    <div className="text-center mb-16">
-      <h2 className="text-4xl font-bold text-white">Связаться со мной</h2>
-      <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
-      <p className="text-gray-400 mt-4 text-lg font-semibold">
-        Готов ответить на ваши вопросы. Заполните форму обратной связи, и я свяжусь с вами в ближайшее время.
-      </p>
-    </div>
+          {/* Кнопка перехода в Telegram */}
+          <a
+            href={`https://t.me/${telegramUsername}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full bg-gradient-to-r from-purple-500 to-purple-700 py-3 text-white font-semibold rounded-md hover:opacity-90 transition flex items-center justify-center space-x-2 hover:from-purple-600 hover:to-purple-800"
+          >
+            <FaTelegram className="w-5 h-5 text-white" />
+            <span>Написать в Telegram</span>
+          </a>
 
-    {/* Форма обратной связи */}
-    <div className="mt-8 w-full max-w-md bg-[#0d081f] p-6 rounded-lg shadow-lg border border-gray-700">
-      <h3 className="text-xl font-semibold text-white text-center">
-        Напишите мне <span className="ml-1">🚀</span>
-      </h3>
-
-      <form
-        ref={form}
-        onSubmit={sendEmail}
-        className="mt-4 flex flex-col space-y-4"
-      >
-        <input
-          type="email"
-          name="user_email"
-          placeholder="Ваш Email"
-          required
-          className="w-full p-3 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none focus:border-purple-500"
-        />
-        <input
-          type="text"
-          name="user_name"
-          placeholder="Ваше Имя"
-          required
-          className="w-full p-3 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none focus:border-purple-500"
-        />
-        <input
-          type="text"
-          name="subject"
-          placeholder="Тема сообщения"
-          required
-          className="w-full p-3 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none focus:border-purple-500"
-        />
-        <textarea
-          name="message"
-          placeholder="Ваше сообщение"
-          rows="4"
-          required
-          className="w-full p-3 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none focus:border-purple-500"
-        />
-
-        {/* Кнопка отправки */}
-        <button
-          type="submit"
-          className="w-full bg-gradient-to-r from-purple-600 to-pink-500 py-3 text-white font-semibold rounded-md hover:opacity-90 transition"
-        >
-          Отправить сообщение
-        </button>
-      </form>
-    </div>
-  </section>);
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Contact;
