@@ -26,7 +26,7 @@ const Footer = () => {
             {name: "Обо мне", id: "about"},
             {name: "Навыки", id: "skills"},
             // { name: "Опыт", id: "experience" },
-            {name: "Проекты", id: "projects"},
+            {name: "Проекты", id: "work"},
             {name: "Образование", id: "education"},
           ].map((item, index) => (
             <button
