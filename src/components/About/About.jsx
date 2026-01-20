@@ -7,21 +7,21 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lg:mt-32"
+      className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 font-sans mt-12 sm:mt-16 md:mt-20 lg:mt-24 xl:mt-32"
     >
-      <div className="flex flex-col-reverse md:flex-row justify-between items-center">
+      <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-8 md:gap-12">
         {/* Left Side */}
-        <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
+        <div className="md:w-1/2 text-center md:text-left">
           {/* Greeting */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 leading-tight">
+          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 leading-tight">
             Привет, Я
           </h1>
           {/* Name */}
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
+          <h2 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-3 sm:mb-4 leading-tight">
             Владислав Рядинский
           </h2>
           {/* Skills Heading with TypeAnimation (inline) */}
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 leading-tight text-white">
+          <h3 className="text-lg xs:text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 leading-tight text-white">
             <span className="text-white">Я&nbsp;</span>
             <TypeAnimation
               sequence={[
@@ -38,7 +38,7 @@ const About = () => {
           </h3>
 
           {/* About Me Paragraph */}
-          <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
+          <p className="text-sm xs:text-base sm:text-lg text-gray-400 mb-8 sm:mb-10 mt-4 sm:mt-8 leading-relaxed">
             Junior Frontend-разработчик, увлечён созданием современных и адаптивных веб-интерфейсов. Владею HTML, CSS, JavaScript и React, использую современные инструменты разработки и стремлюсь применять лучшие практики для создания удобных и эффективных решений.
           </p>
           {/* Resume Button */}
@@ -46,7 +46,7 @@ const About = () => {
             href="https://drive.google.com/file/d/1EVG_TdS6uYdT14yA7m00QKdV1jk0FKAs/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
+            className="inline-block text-white py-3 px-6 sm:py-3 sm:px-8 md:py-4 md:px-10 rounded-full text-sm sm:text-base md:text-lg font-bold transition duration-300 transform hover:scale-105"
             style={{
               background: 'linear-gradient(90deg, #8245ec, #a855f7)',
               boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
