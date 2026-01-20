@@ -28,6 +28,7 @@ import movierecLogo from './assets/work_logo/movie_rec.png';
 import ProductStoreLogo from './assets/work_logo/product_store_mern.png';
 import omnivisionLogo from './assets/work_logo/omniVision.png';
 import taskLogo from './assets/work_logo/task_project.png';
+import doorsWp_Logo from './assets/work_logo/wp_doors_project.png';
 
 
 
@@ -153,5 +154,14 @@ export const projects = [
     tags: ["HTML", "CSS", "React", "Vite", "Local Storage"],
     github: "https://github.com/vlad-ryad/task-project",
     webapp: "https://task-project-tan-eight.vercel.app/",
+  },
+  {
+    id: 6,
+    title: "ZHOVNER - Магазин межкомнатных дверей на WordPress",
+    description: "Проект демонстрирует полный цикл создания сайта: от верстки до интеграции с CMS. В рамках разработки кастомной темы WordPress были реализованы ключевые функции интернет-магазина: фильтрация каталога, динамические карточки товаров с использованием плагина SCF (Secure Custom Fields), настраиваемые через админку страницы (главная, портфолио, контакты) и функциональные формы обратной связи. Для фронтенда использована vanilla JavaScript с подключением библиотеки List.js для сортировки данных. Проект завершен переносом на рабочий хостинг.",
+    image: doorsWp_Logo,
+    tags: ["WordPress", "PHP", "HTML", "CSS", "JavaScript", "List.js", "Contact Form 7", "SCF"],
+    github: "https://github.com/vlad-ryad/doors_wp_project/",
+    webapp: "http://u196614.test-handyhost.ru/",
   },
 ];
