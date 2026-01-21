@@ -72,7 +72,7 @@ const Footer = () => {
 
         {/* Copyright Text */}
         <p className="text-sm text-gray-400 mt-6">
-          © 2025 Владислав Рядинский. Все права защищены.
+          © 2026 Владислав Рядинский. Все права защищены.
         </p>
       </div>
     </footer>
