@@ -4,6 +4,8 @@ import cssLogo from './assets/tech_logo/css.png';
 import sassLogo from './assets/tech_logo/sass.png';
 import javascriptLogo from './assets/tech_logo/javascript.png';
 import reactjsLogo from './assets/tech_logo/reactjs.png';
+import nexteLogo from './assets/tech_logo/nextjs.png';
+import typescriptLogo from './assets/tech_logo/typescript.png';
 import tailwindcssLogo from './assets/tech_logo/tailwindcss.png';
 import bootstrapLogo from './assets/tech_logo/bootstrap.png';
 import mysqlLogo from './assets/tech_logo/mysql.png';
@@ -16,6 +18,8 @@ import postmanLogo from './assets/tech_logo/postman.png';
 import figmaLogo from './assets/tech_logo/figma.png';
 import vercelLogo from './assets/tech_logo/vercel.png';
 import postgreLogo from './assets/tech_logo/postgre.png';
+import expressLogo from './assets/tech_logo/express.png';
+
 
 // Education Section Logo
 import altgtyLogo from './assets/education_logo/altgty_logo.jpg';
@@ -42,12 +46,15 @@ export const SkillsInfo = [
       {name: 'SASS', logo: sassLogo},
       {name: 'JavaScript', logo: javascriptLogo},
       {name: 'React JS', logo: reactjsLogo},
+      {name: 'Next JS', logo: nexteLogo},
+      {name: 'TypeScript JS', logo: typescriptLogo},
       {name: 'Tailwind CSS', logo: tailwindcssLogo},
       {name: 'Bootstrap', logo: bootstrapLogo},
       {name: 'MySQL', logo: mysqlLogo},
       {name: 'MongoDB', logo: mongodbLogo},
       {name: 'Firebase', logo: firebaseLogo},
       {name: 'PostgreSQL', logo: postgreLogo},
+      {name: 'Express', logo: expressLogo},
     ],
   },
   // {
