@@ -29,6 +29,7 @@ import ProductStoreLogo from './assets/work_logo/product_store_mern.png';
 import omnivisionLogo from './assets/work_logo/omniVision.png';
 import taskLogo from './assets/work_logo/task_project.png';
 import doorsWp_Logo from './assets/work_logo/wp_doors_project.png';
+import kitchenLogo from './assets/work_logo/next_kitchen_recipes.png';
 
 
 
@@ -141,7 +142,7 @@ export const projects = [
     description:
       "Веб-приложение на стеке MERN для управления товарами. Реализовал добавление, редактирование и удаление товаров, интеграцию с REST API, работу с MongoDB и Node.js, настроил фронтенд на React с использованием Chakra UI.",
     image: ProductStoreLogo,
-    tags: ["Vite", "React", "REST API", "Node", "Express", "MongoDB", "Chakra UI"],
+    tags: ["Express", "React", "REST API", "Node", "Vite", "MongoDB", "Chakra UI"],
     github: "https://github.com/vlad-ryad/product_store_mern",
     webapp: "https://product-store-mern-05b1.onrender.com/",
   },
@@ -163,5 +164,14 @@ export const projects = [
     tags: ["WordPress", "PHP", "HTML", "CSS", "JavaScript", "List.js", "Contact Form 7", "SCF"],
     github: "https://github.com/vlad-ryad/doors_wp_project/",
     webapp: "http://u196614.test-handyhost.ru/",
+  },
+  {
+    id: 7,
+    title: "Рецепты домашней кухни",
+    description: "Full-stack веб-приложение для управления рецептами с полным циклом разработки — от инициализации проекта до деплоя. Реализована система аутентификации пользователей (Auth.js) с защищенными маршрутами через middleware. В проекте использован современный стек: Next.js App Router для файлового роутинга, PostgreSQL база данных с Prisma ORM, Zustand для глобального состояния и Zod для валидации данных. Интерфейс построен на компонентах HeroUI. Ключевые функции: регистрация/авторизация, создание/редактирование рецептов, работа с ингредиентами, серверные действия для обработки форм и модальные окна для взаимодействия с пользователем.",
+    image: kitchenLogo,
+    tags: ["Next.js", "Typescript", "Zustand", "Zod", "HeroUI", "PostgreSQL", "Prisma ORM", "Auth.js"],
+    github: "https://github.com/vlad-ryad/next_kitchen_recipes/",
+    webapp: "https://next-kitchen-recipes.vercel.app/",
   },
 ];
